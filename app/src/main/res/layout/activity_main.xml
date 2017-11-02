@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/game_container">
+</FrameLayout>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:background="@drawable/bg3"-->
+    <!--tools:context="com.beatme.go.MainActivity">-->
+
+    <!--<LinearLayout-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:weightSum="1"-->
+        <!--android:gravity="center"-->
+        <!--&gt;-->
+        <!--<ImageView-->
+            <!--android:background="@drawable/applogo"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight=".70"-->
+            <!--android:layout_gravity="center"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_marginBottom="31dip"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:orientation="vertical"-->
+        <!--&gt;-->
+        <!--<TextView-->
+            <!--android:id="@+id/pbS"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="0%"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="15sp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:textStyle="bold|italic" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--&gt;-->
+        <!--<ProgressBar-->
+            <!--android:id="@+id/pb_f"-->
+            <!--style="@style/Pb_f"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="20dip"-->
+            <!--android:layout_weight="0.8"-->
+            <!--android:layout_marginLeft="10dip"-->
+            <!--android:layout_marginRight="10dip"-->
+            <!--android:layout_marginBottom="10dip" />-->
+    <!--</LinearLayout>-->
+<!--</RelativeLayout>-->

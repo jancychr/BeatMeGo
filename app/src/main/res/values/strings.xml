@@ -1,0 +1,22 @@
+<resources>
+    <!-- General Strings -->
+    <string name="app_name">Beat Me Go!</string>
+    <string name="app_id">653558703630</string>
+    <string name="signin_other_error">Error In Connection!!</string>
+    <string name="title_activity_game">GameActivity</string>
+
+    <!-- Google IDS -->
+    <string name="leaderboard_id">CgkIjsyJ2YITEAIQBw</string>
+    <string name="second_leaderboard">CgkIjsyJ2YITEAIQFw</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string> <!-- for BaseGameUnits -->
+    <string name="map_key">AIzaSyBcuj-jsEvRih2WYO8ze4KBPW81T73LHuk</string>
+    <string name="map_js_key">AIzaSyAKuvNQSoXw_bzssp081OergXGOCAKv8Gc</string>
+    <!-- -->
+    <string name="msg_draw">Uh oh, it\'s a draw!</string>
+    <string name="msg_youwin">Well done, you win !</string>
+    <string name="msg_p1win">Player 1 has won !</string>
+    <string name="msg_p2win">Player 2 has won !</string>
+    <string name="msg_youlose">Sorry, you have lost !</string>
+    <string name="surerestart">Are you sure you want to restart the game?</string>
+</resources>

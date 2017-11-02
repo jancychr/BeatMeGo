@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.beatme.go.LeaderBoardFragment"
+    android:id="@+id/leaderboard_fragment"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="380dp"
+    android:orientation="vertical"
+    android:background="@drawable/dialogbg">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Top Players"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:typeface="sans" />
+        <ImageButton
+            android:id="@+id/close_button"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/clgbtn"
+            android:scaleType="fitXY"
+            android:padding="0dp"
+            android:cropToPadding="false" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dialoginnerbg">
+        <LinearLayout
+            android:id="@+id/leaderboard_loading"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ProgressBar
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+        <ListView
+            android:id="@+id/leaderboard_list"
+            android:layout_width="fill_parent"
+            android:layout_height="450dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="5dp"
+            android:visibility="gone">
+
+            <listview
+            android:id="@+id/lead_list"
+        android:layout_width="fill_parent"
+        android:layout_hieght="450dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5dp"
+        android:visibility="gone"></listview>
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Button" />
+
+        </ListView>
+    </RelativeLayout>
+</LinearLayout>

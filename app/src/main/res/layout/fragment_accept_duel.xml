@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/accept_duel_fragment"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/dialogbg"
+    android:minWidth="380dp"
+    android:orientation="vertical"
+    tools:context="com.beatme.go.AcceptDuelFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Accept Duel"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <ImageButton
+            android:id="@+id/close_button"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:cropToPadding="false"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/clgbtn" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:background="@drawable/dialoginnerbg"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <Button
+                android:id="@+id/refreshacptlist"
+                android:background="@drawable/rfrshbtn"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Click to Refresh..."
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            >
+            <LinearLayout
+                android:id="@+id/accptdlloading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="visible">
+                <ProgressBar
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:indeterminate="true"
+                    android:layout_marginBottom="15dp"
+                    />
+                <TextView
+                    android:id="@+id/resulttext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Finding players near you..."
+                    android:textSize="18dp"
+                    android:typeface="sans"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/accptdllistbox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/dialoginnerbg"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+                <ListView
+                    android:id="@+id/accptdl_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="400dp"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="5dp"
+                    >
+                </ListView>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

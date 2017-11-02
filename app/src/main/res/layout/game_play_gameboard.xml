@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/piecesframe"
+        >
+    </RelativeLayout>
+    <ImageView android:src="@drawable/board" android:scaleType="fitCenter"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/board"
+        />
+    <com.game.views.GameLinesView
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/winlinesframe"
+        >
+    </com.game.views.GameLinesView>
+</FrameLayout>

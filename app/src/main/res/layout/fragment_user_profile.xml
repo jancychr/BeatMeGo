@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/userprofile_fragment"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="350dp"
+    android:background="@drawable/dialogbg"
+    android:orientation="vertical"
+    tools:context="com.beatme.go.UserProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Player Profile"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <ImageButton
+            android:id="@+id/close_button"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:cropToPadding="false"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/clgbtn" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/dialoginnerbg"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/usergooglename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="bhautik"
+                android:textAppearance="@style/usrnmstl"
+                android:textColor="#aaa"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/utrophy"
+                    style="@style/utrphy"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="0000"
+                    android:textColor="#FFCC00"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/trophy" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dialogDivider"
+            android:gravity="center"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dlgdvdr"
+                android:text="Player Stats"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical"
+                android:padding="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/plysttslbl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Wins" />
+
+                    <TextView
+                        android:id="@+id/playerwins"
+                        style="@style/plysttsbx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="00" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/plysttslbl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Highest Trophies"
+                         />
+                    <TextView
+                        android:id="@+id/playerhighesttrophies"
+                        style="@style/plysttsbx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="00" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/plysttslbl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Players Competed" />
+
+                    <TextView
+                        android:id="@+id/playercompeted"
+                        style="@style/plysttsbx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="00" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/plysttslbl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Local Players" />
+
+                    <TextView
+                        android:id="@+id/playerlocal"
+                        style="@style/plysttsbx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="00" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
